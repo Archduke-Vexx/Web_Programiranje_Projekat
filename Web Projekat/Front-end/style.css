@@ -1,0 +1,80 @@
+*{
+   
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #cccccc;
+   }
+
+.MainContainer{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.MainBody{
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    background-color: aqua;
+}
+.vasazakazivanja{
+    border: 2px solid black;
+    background-color: yellow;
+    width: 100%;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+.navbtn{
+    padding: 1em;
+    
+}
+.navbtn:hover{
+    background-color: darkcyan;
+}
+.Form
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.Form > *
+{
+    margin: 0.5rem 0;
+}
+.Form > button
+{
+    margin: 0.5rem 0;
+}
+.Form > input , textarea, select
+{
+    padding: 0.5rem;
+    font-size: medium;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
