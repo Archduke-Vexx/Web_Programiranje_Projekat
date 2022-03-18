@@ -5947,11 +5947,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\akave\\OneDrive\\Desktop\\WEBPROJ\\WEBPROJ.csproj",
+      "projectUniqueName": "C:\\Users\\akave\\OneDrive\\Desktop\\WEBPROJ\\Web Projekat\\Back-end\\WEBPROJ.csproj",
       "projectName": "WEBPROJ",
-      "projectPath": "C:\\Users\\akave\\OneDrive\\Desktop\\WEBPROJ\\WEBPROJ.csproj",
+      "projectPath": "C:\\Users\\akave\\OneDrive\\Desktop\\WEBPROJ\\Web Projekat\\Back-end\\WEBPROJ.csproj",
       "packagesPath": "C:\\Users\\akave\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\akave\\OneDrive\\Desktop\\WEBPROJ\\obj\\",
+      "outputPath": "C:\\Users\\akave\\OneDrive\\Desktop\\WEBPROJ\\Web Projekat\\Back-end\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\akave\\AppData\\Roaming\\NuGet\\NuGet.Config",

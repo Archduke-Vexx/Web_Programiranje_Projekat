@@ -69,7 +69,7 @@ export class Korisnik
             {                                                  if(ev.ok) {alert("Ide")}
                                                                else {alert("Overlapuju se datumi. Neuspesno")}}
             );
-            console.log({"input1":input1, "input2":input2});    
+           
     }
 
 

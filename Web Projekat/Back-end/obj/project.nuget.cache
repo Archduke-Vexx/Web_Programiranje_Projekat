@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WP6SlSc/SI0epsSj283O56sSo1EXMVUdEb+aO2O5Xs7E4tURhMdvVykhJUoGqEnLfuBYaz+3ib4IEmdXi5K1sA==",
+  "dgSpecHash": "f9uQaSVYgQxKSrJpUwPxv0ev+xGByhg8+yBuLg/WAQLTl2UgMn2HoQiIZBM7atgwLVV1Azz0f9HWiNASN7hkAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\akave\\OneDrive\\Desktop\\WEBPROJ\\WEBPROJ.csproj",
+  "projectFilePath": "C:\\Users\\akave\\OneDrive\\Desktop\\WEBPROJ\\Web Projekat\\Back-end\\WEBPROJ.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\akave\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\akave\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

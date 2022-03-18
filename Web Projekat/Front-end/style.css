@@ -2,6 +2,7 @@
    
     margin: 0;
     padding: 0;
+
 }
 body {
     background-color: #cccccc;
@@ -14,6 +15,13 @@ body {
     flex-wrap: wrap;
     width: 100%;
 }
+.dobrodosli{
+    flex-grow: 1;
+    text-align: center;
+    font-style: oblique;
+    font-size: 30px;
+}
+
 .MainBody{
     flex-direction: column;
     justify-content: flex-start;

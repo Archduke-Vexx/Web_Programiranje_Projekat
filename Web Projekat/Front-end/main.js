@@ -37,13 +37,26 @@ class Main
         navigation.appendChild(register);
         register.onclick = (ev) => this.crtajRegisterUser(body);
 
+        var div1 = document.createElement("div");
+        div1.className = "dobrodosli";
+        var h1 = document.createElement("h1");
+        h1.innerHTML = "Dobrodosli na stranicu Sportskog centra!";
+        var p = document.createElement("p");
+        p.innerHTML = "Ako niste registrovani korisnik, kliknite na dugme 'Register'";
+        var p1 = document.createElement("p");
+        p1.innerHTML = "Ako ste registrovani korisnik kliknite na dugme 'Loguj se'";
+        div1.appendChild(h1);
+        div1.appendChild(p);
+        div1.appendChild(p1);
+        body.appendChild(div1);
+
     }
     crtajLogin(btnLog, host, navigation)
     {
         this.cleanPage(host);
 
         var div = document.createElement("div");
-        div.className = "postThreadForm";
+        div.className = "postForm";
         div.className += " Form";
         host.appendChild(div);
 
@@ -110,8 +123,22 @@ class Main
 
                 });
                 alert("Login uspesan");
-                this.cleanPage(host);
+                this.cleanPage(host);    
                 btnLog.innerHTML = "Logout";
+
+                var d1 = document.createElement("div");
+                d1.className = "dobrodosli";
+                var h1 = document.createElement("h1");
+                h1.innerText = "Izaberite zeljene operacije!";
+                var p1 = document.createElement("p");
+                p1.innerHTML = "-> Da zakazete i prikazate zakazivanja za datu salu odredjenog Sportskog centra kliknite na dugme 'Zakazi' ";
+                var p2 = document.createElement("p");
+                p2.innerHTML = "-> Da vidite vasa zakazivanja za sve Sportske centre i njihove sala kliklinite na dugme 'Vasa zakazivanja'"
+
+                d1.appendChild(h1);
+                d1.appendChild(p1);
+                d1.appendChild(p2);
+                host.appendChild(d1);
               
                 var div1 = document.createElement("div");
                 div1.innerHTML = "Zakazi";
@@ -370,6 +397,8 @@ class Main
             response => {
             if(response.ok)
             {
+
+               var nizSala = []
                 var x;  
                 response.json().then( sale => {
                     
@@ -381,11 +410,18 @@ class Main
                         SalaSelect.appendChild(option);    
                          x = new Sala(sala.id, sala.naziv);  
                         
+                         nizSala.push(x);
                     });
-                    
-            
-                    x.Crtaj(listaZakazivanja);
-                    SalaSelect.onchange = (ev) => x.Crtaj(listaZakazivanja);
+                    nizSala[0].Crtaj(listaZakazivanja);
+                    SalaSelect.onchange = (ev) => {
+                        nizSala.forEach(Sala => {
+                            if(Sala.ID == SalaSelect.value)
+                            {
+                                Sala.Crtaj(listaZakazivanja);
+                            }
+                        })
+                    };
+                 
 
 
                 } );

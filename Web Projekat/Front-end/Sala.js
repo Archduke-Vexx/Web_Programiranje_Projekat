@@ -36,7 +36,7 @@ export class Sala
         r.appendChild(h3);
         r.appendChild(h4);
         r.appendChild(h5);
-
+        
         fetch("https://localhost:5001/Sala/GetZakazivanja/"+this.ID).then(
             response => {
             if(response.ok)
